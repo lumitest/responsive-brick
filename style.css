@@ -1,0 +1,61 @@
+body {
+  text-align: center;
+}
+
+.rect-brick {
+  display: inline-block;
+  border: 4px solid #707070;
+  width: 200px;
+  height:400px;
+}
+
+.column {
+  position: absolute;
+  height: 380px;
+  width: 4px;
+  background-color: #101010;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.shelf {
+  height: 4px;
+  width: 150px;
+  background-color: #741414;
+  position: relative;
+  top: 380px;
+  left: 10px;
+  animation-name: upside-down;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: normal;
+}
+
+.gear {
+  background: url('img/gear.svg');
+}
+
+@keyframes upside-down {
+  /*0% {
+    transform: translateY(-360px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-360px);
+  }*/
+}
+
+@keyframes here-there {
+  0% {
+    transform: translateX(50px);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}

@@ -1,0 +1,98 @@
+@font-face {
+	font-family: Lato-Thin;
+  src: url('../font/Lato-Thin.ttf');
+}
+
+* {
+  font-family: Lato-Thin;
+  font-weight: 600;
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-weight: 100;
+}
+
+h3 {
+  margin-top: 3em;
+  font-size: 1em;
+  font-weight: 100;
+}
+
+.rect-brick {
+  display: inline-block;
+  border: 2px solid #707070;
+  width: 200px;
+  height:400px;
+}
+
+.column {
+  position: absolute;
+  height: 380px;
+  width: 4px;
+  background-color: #101010;
+  margin-top: 10px;
+  margin-left: 20px;
+  border-radius: 2px;
+}
+
+.shelf {
+  height: 4px;
+  width: 150px;
+  background-color: #741414;
+  border-radius: 3px;
+  position: relative;
+  top: 380px;
+  left: 10px;
+  animation-name: upside-down;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: normal;
+}
+
+.gear {
+  background: url('../img/gear.svg');
+  background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: -30px;
+  left: 20px;
+  animation-name: here-there;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: normal;
+}
+
+@keyframes upside-down {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-340px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes here-there {
+  0% {
+    transform: translateX(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateX(100px) rotate(360deg);
+  }
+  100% {
+    transform: translateX(0px) rotate(0deg);
+  }
+}
