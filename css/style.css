@@ -10,6 +10,7 @@
 
 body {
   text-align: center;
+  word-wrap: break-word;
 }
 
 h1 {
@@ -47,7 +48,7 @@ h3 {
 
 .shelf {
   height: 4px;
-  width: 150px;
+  width: 85%;
   background-color: #741414;
   border-radius: 3px;
   position: relative;
@@ -98,3 +99,10 @@ h3 {
     transform: translateX(0px) rotate(0deg);
   }
 }
+ @media screen and (max-width: 400px) {
+	.rect-brick {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+ }
