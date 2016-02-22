@@ -98,12 +98,7 @@ h3 {
     transform: translateX(0px) rotate(0deg);
   }
 }
- @media screen and (max-width: 677px) {
-	h1, h2,h3 {
-		font-size: 12pt;
-	}
- }
- @media screen and (max-height: 666px) {
+ @media screen and (max-width: 677px), @media screen and (max-height: 666px) {
 	h1, h2,h3 {
 		font-size: 12pt;
 	}
