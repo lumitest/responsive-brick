@@ -99,16 +99,3 @@ h3 {
     transform: translateX(0px) rotate(0deg);
   }
 }
- @media screen and (max-width: 400px) {
-	.rect-brick {
-		width: 90%;
-		margin-left: auto;
-		margin-right: auto;
-	}
- }
- @media screen and (max-width: 200px) {
-	.rect-brick {
-		width: 200px;
-		
-	}
- }
