@@ -10,7 +10,6 @@
 
 body {
   text-align: center;
-  word-wrap: break-word;
 }
 
 h1 {
@@ -99,3 +98,23 @@ h3 {
     transform: translateX(0px) rotate(0deg);
   }
 }
+ @media screen and (max-width: 677px) {
+	h1, h2,h3 {
+		font-size: 12pt;
+	}
+ }
+ @media screen and (max-height: 666px) {
+	h1, h2,h3 {
+		font-size: 12pt;
+	}
+ }
+@media screen and (max-height: 575px) {
+	h1, h2,h3	{
+		margin: 0px;
+	}
+ }
+ @media screen and (max-height: 520px) {
+	h1, h2,h3	{
+		font-size: 6pt;
+	}
+ }
