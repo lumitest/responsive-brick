@@ -13,7 +13,7 @@ body {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 3.5em;
 }
 
 h2 {
@@ -27,10 +27,12 @@ h3 {
 }
 
 .rect-brick {
-  display: inline-block;
+  display: block;
   border: 2px solid #707070;
   width: 200px;
   height:400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .column {
