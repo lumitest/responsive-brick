@@ -27,10 +27,12 @@ h3 {
 }
 
 .rect-brick {
-  display: inline-block;
+  display: block;
   border: 2px solid #707070;
   width: 200px;
   height:400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .column {
@@ -45,7 +47,7 @@ h3 {
 
 .shelf {
   height: 4px;
-  width: 150px;
+  width: 85%;
   background-color: #741414;
   border-radius: 3px;
   position: relative;
@@ -72,7 +74,28 @@ h3 {
   animation-iteration-count: infinite;
   animation-duration: normal;
 }
-
+@keyframes upside-down-mini {
+  0% {
+    transform: translateY(-200px);
+  }
+  50% {
+    transform: translateY(-340px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}
+@keyframes upside-down-midi {
+  0% {
+    transform: translateY(-100px);
+  }
+  50% {
+    transform: translateY(-340px);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
 @keyframes upside-down {
   0% {
     transform: translateY(0px);
@@ -84,7 +107,6 @@ h3 {
     transform: translateY(0px);
   }
 }
-
 @keyframes here-there {
   0% {
     transform: translateX(0px) rotate(0deg);
@@ -96,3 +118,85 @@ h3 {
     transform: translateX(0px) rotate(0deg);
   }
 }
+/* Медиа-запросы для изменения размера шрифтов */
+ @media screen and (max-width: 677px), screen and (max-height: 666px) {
+	h1 {
+		font-size: 2.4em;
+	}	
+	h2 {
+		font-size: 1em;
+	} 
+	h3 {
+		font-size: 0.8em;
+	}
+ }
+@media screen and (max-width: 470px){
+	h1 {
+		font-size: 1.8em;
+	}
+}
+@media screen and (max-height: 600px) {
+	h1, h2	{
+		margin: 0px;
+	}
+ }
+ @media screen and (max-height: 535px) {
+	h1, h2, h3	{
+		margin: 0px;
+	}
+	h1 {
+		font-size: 1.4em;
+	}
+	h2 {
+		font-size: 1.1em;
+	}
+	h3 {
+		font-size: 0.9em;
+	}
+ }
+ /* изменение размеров блока анимации при ширине больше 380px */
+@media screen and (max-height: 485px) and (min-width: 380px){
+	.column{
+		height: 280px;
+	}
+	.shelf {
+		animation-name: upside-down-midi;
+	}
+	.rect-brick {
+		height: 300px;
+	}
+ }
+@media screen and (max-height: 385px) and (min-width: 380px) {
+	.column{
+		height: 180px;
+	}
+	.shelf {
+		animation-name: upside-down-mini;
+	}
+	.rect-brick {
+		height: 200px;
+	}
+ }
+ /* изменение размеров блока анимации при ширине меньше 380px */
+ @media screen and (max-height: 630px) and (max-width: 380px){
+	.column{
+		height: 280px;
+	}
+	.shelf {
+		animation-name: upside-down-midi;
+	}
+	.rect-brick {
+		height: 300px;
+	}
+ }
+  @media screen and (max-height: 460px) and (max-width: 380px) {
+	 .column{
+		height: 180px;
+	}
+	.shelf {
+		animation-name: upside-down-mini;
+	}
+	.rect-brick {
+		height: 200px;
+	}
+ }
