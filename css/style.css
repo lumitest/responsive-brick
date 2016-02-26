@@ -98,6 +98,17 @@ h3 {
     transform: translateY(-200px);
   }
 }
+@keyframes upside-down-midi {
+  0% {
+    transform: translateY(-100px);
+  }
+  50% {
+    transform: translateY(-340px);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
 
 @keyframes here-there {
   0% {
@@ -128,8 +139,41 @@ h3 {
 		margin: 0px;
 	}
  }
-  @media screen and (max-height: 465px) {
+@media screen and (max-height: 465px) and (min-width: 380px){
 	.column{
+		height: 280px;
+	}
+	.shelf {
+		animation-name: upside-down-midi;
+	}
+	.rect-brick {
+		height: 300px;
+	}
+ }
+@media screen and (max-height: 365px) and (min-width: 380px) {
+	.column{
+		height: 180px;
+	}
+	.shelf {
+		animation-name: upside-down-mini;
+	}
+	.rect-brick {
+		height: 200px;
+	}
+ }
+ @media screen and (max-height: 590px) and (max-width: 380px){
+	.column{
+		height: 280px;
+	}
+	.shelf {
+		animation-name: upside-down-midi;
+	}
+	.rect-brick {
+		height: 300px;
+	}
+ }
+  @media screen and (max-height: 390px) and (max-width: 380px) {
+	 .column{
 		height: 180px;
 	}
 	.shelf {
